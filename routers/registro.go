@@ -22,7 +22,7 @@ func Registro(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "El email de usuario es requqerido", 400)
 		return
 	}
-	if len(t.Password) > 6 {
+	if len(t.Password) < 6 {
 		http.Error(w, "Desbes especificar una contraseña de almenos 6 caracteres", 400)
 		return
 	}
