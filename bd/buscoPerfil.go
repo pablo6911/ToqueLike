@@ -15,7 +15,7 @@ func BuscoPerfil(ID string) (models.Usuario, error) {
 	ctx, calcel := context.WithTimeout(context.Background(), time.Second*15)
 	defer calcel()
 
-	db := MongoCN.Database("Toquelike")
+	db := MongoCN.Database("toquelike")
 	col := db.Collection("usuarios")
 
 	var perfil models.Usuario
