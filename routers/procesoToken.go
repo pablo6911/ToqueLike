@@ -17,7 +17,7 @@ var IDUsuario string
 
 //ProcesoToken proceso token pera extraer sus valores
 func ProcesoToken(tk string) (*models.Claim, bool, string, error) {
-	miClave := []byte("ToqueLike")
+	miClave := []byte("Toque")
 	claims := &models.Claim{}
 
 	splitToken := strings.Split(tk, "Bearer")
