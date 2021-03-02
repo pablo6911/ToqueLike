@@ -10,7 +10,7 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//Login realiza el login
+//Login realiza el login----------
 func Login(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("content-type", "application/json")
 

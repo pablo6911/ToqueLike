@@ -7,7 +7,7 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//GeneroJWT genera el encriptado con JWT
+//GeneroJWT genera el encriptado con JWT-----------
 func GeneroJWT(t models.Usuario) (string, error) {
 
 	miClave := []byte("Toque")
