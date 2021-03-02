@@ -8,7 +8,7 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//ModificoPerfil modifica el perfil de usuario
+//ModificoPerfil modifica el perfil de usuario--------
 func ModificoPerfil(w http.ResponseWriter, r *http.Request) {
 	var t models.Usuario
 	err := json.NewDecoder(r.Body).Decode(&t)

@@ -9,7 +9,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-//ModificoRegistro permite midificar el perfil del usuario
+//ModificoRegistro permite midificar el perfil del usuario-----------
 func ModificoRegistro(u models.Usuario, ID string) (bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
