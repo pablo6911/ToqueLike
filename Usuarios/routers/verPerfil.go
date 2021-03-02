@@ -7,7 +7,7 @@ import (
 	"github.com/pablo6911/ToqueLike/bd"
 )
 
-//Verperfil permite extraer los valores del perfil
+//Verperfil permite extraer los valores del perfil--------
 func Verperfil(w http.ResponseWriter, r *http.Request) {
 
 	ID := r.URL.Query().Get("id")
