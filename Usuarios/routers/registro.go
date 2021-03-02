@@ -8,7 +8,7 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//Registro es la func para crear en la BD el registro de user
+//Registro es la func para crear en la BD el registro de user-------
 func Registro(w http.ResponseWriter, r *http.Request) {
 
 	var t models.Usuario
