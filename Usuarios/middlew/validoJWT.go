@@ -6,7 +6,7 @@ import (
 	"github.com/pablo6911/ToqueLike/routers"
 )
 
-//ValidoJWT permite validarel JWT que nos viene en lapeticion
+//ValidoJWT permite validarel JWT que nos viene en lapeticion--------
 func ValidoJWT(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		_, _, _, err := routers.ProcesoToken(r.Header.Get("Authorization"))

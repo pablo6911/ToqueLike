@@ -9,7 +9,7 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//Email valor de Email usado en todos los EndPoints
+//Email valor de Email usado en todos los EndPoints-----------
 var Email string
 
 //IDUsuario es el ID devuelto del modelo, que se usara en todos lo EnsPoints
