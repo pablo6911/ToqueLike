@@ -10,7 +10,9 @@ import (
 	"github.com/pablo6911/ToqueLike/models"
 )
 
-//SubirAvatar sube el avatar al servidor
+var status bool
+
+//SubirAvatar sube el avatar al servidor------
 func SubirAvatar(w http.ResponseWriter, r *http.Request) {
 
 	file, handler, err := r.FormFile("avatar")
@@ -29,7 +31,6 @@ func SubirAvatar(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var usuario models.Usuario
-	var status bool
 
 	usuario.Avatar = IDUsuario + "." + extension
 	status, err = bd.ModificoRegistro(usuario, IDUsuario)
